@@ -1,12 +1,15 @@
 {
-  "name": "react-javascript",
+  "name": "Text-Utils",
+  "homepage": "https://Utkarsh-Web-2023.github.io/Text_Utils",
   "version": "1.0.0",
   "type": "module",
   "description": "React TypeScript on Replit, using Vite bundler",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +25,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.33",
     "prop-types": "^15.8.1",
     "rippleui": "^1.12.1",

@@ -112,7 +112,10 @@ export default function TextForm(props) {
   finalReadingTime = roundedReadingTime;
 
   return (
-    <div className={`container  textarea-container ${props.mode} `}>
+    <div
+      className={`container  textarea-container ${props.mode} `}
+      style={{ maxWidth: "100%" }}
+    >
       <h1 className="heading">{props.heading}</h1>
       <textarea
         className="textarea  textarea-block textarea-main textarea-solid textarea-primary"
