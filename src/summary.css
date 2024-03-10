@@ -15,3 +15,9 @@
     letter-spacing:1px;
     text-align:center;
 }
+.disabled{
+    opacity:0.4;
+    /* background-color:#111; */
+    /* display:none; */
+    
+}
