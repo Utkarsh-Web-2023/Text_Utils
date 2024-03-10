@@ -66,3 +66,33 @@ textarea:focus{
 .light textarea::placeholder{
     color:#333;
 }
+/* Style for scrollbar */
+textarea::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+    transition:0.3s linear;
+}
+textarea::-webkit-scrollbar:hover {
+  width: 8px; /* Width of the scrollbar */
+    
+}
+
+/* Track */
+textarea::-webkit-scrollbar-track {
+  background: transparent; /* Color of the track */
+
+}
+::-webkit-scrollbar-thumb:hover {
+  width: 8px; /* Increase width on hover */
+}
+
+/* Handle */
+textarea::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #555, #333
+                              , #5c5c5c); /* Color gradient for the handle */
+  border-radius: 8px; /* Border radius of the handle */
+}
+
+/* Handle on hover */
+textarea::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #5c5c5c, #333333, #111111); /* Color gradient for the handle on hover */
+}

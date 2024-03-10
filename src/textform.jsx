@@ -16,10 +16,12 @@ export default function TextForm(props) {
 
   function handlechange(event) {
     setText(event.target.value);
-    if (event.target.value === "") {
+
+    if (event.target.value.trim() === "") {
       setDisabledBtn("disabled");
     } else {
       setDisabledBtn("");
+      setText(event.target.value);
     }
   }
 
